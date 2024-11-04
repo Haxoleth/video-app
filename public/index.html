@@ -1,0 +1,28 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Video App</title>
+</head>
+<body>
+  <h1 class="title">Contenidos en Videos</h1>
+  <div id="videoContainer" class="video-container"></div>
+  
+  <!-- Botón flotante de subida de video -->
+  <div id="uploadButton" class="upload-button">+</div>
+
+  <!-- Formulario de subida de video -->
+  <div id="uploadFormContainer" class="upload-form-container hidden">
+    <form id="uploadForm" class="upload-form">
+      <input type="file" id="videoFile" accept="video/*" required>
+      <button type="button" id="submitBtn">Subir Video</button>
+      <button type="button" id="cancelBtn">Cancelar</button>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
